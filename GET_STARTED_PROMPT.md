@@ -6,13 +6,12 @@ This is the main bootstrap prompt for users to paste into Claude Code.
 
 Paste this into a fresh Claude Code chat from the root of the project you want to customize.
 
-Before you run it, replace `STARTER_REPO_URL` with the public GitHub URL for this repo after you publish it.
 
 ```md
 Task: Bootstrap this project with a project-specific Claude workflow.
 
 Context:
-- I want to use the public starter repo at: STARTER_REPO_URL
+- I want to use the public starter repo at: github.com/OnlyBagels/AI-Development-Resources/
 - I am in the root of the project I want to configure.
 - The starter repo contains reusable Claude Code patterns: CLAUDE.md, .claude/agents, .claude/skills, .claude/commands, docs, prompts, and checklists.
 - Do not blindly copy generic files. Interview me first, then customize everything to this project.
