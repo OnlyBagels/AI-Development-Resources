@@ -1,0 +1,27 @@
+# Optional Claude Code GitHub Action template.
+# Review the current Anthropic docs before enabling this in a real repo.
+# Requires ANTHROPIC_API_KEY or provider-specific auth in repository secrets.
+
+name: Claude
+
+on:
+  issue_comment:
+    types: [created]
+  pull_request_review_comment:
+    types: [created]
+  issues:
+    types: [opened, assigned]
+
+jobs:
+  claude:
+    if: contains(github.event.comment.body || github.event.issue.body || '', '@claude')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      # Replace with the latest official Claude Code Action setup from Anthropic docs.
+      - name: Placeholder
+        run: echo "Configure Claude Code GitHub Action here."

@@ -1,0 +1,25 @@
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Logs and temp
+*.log
+.tmp/
+tmp/
+
+# Env/secrets
+.env
+.env.*
+!.env.example
+
+# Node/Python common
+node_modules/
+__pycache__/
+.pytest_cache/
+dist/
+build/
+coverage/
+
+# Local Claude memory that should usually not be committed
+.claude/agent-memory-local/
