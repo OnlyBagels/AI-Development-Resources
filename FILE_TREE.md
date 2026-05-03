@@ -8,6 +8,7 @@
 .claude/agents/opus-architect.md
 .claude/agents/review-gate.md
 .claude/agents/swarm-coordinator.md
+.claude/commands/bootstrap-project.md
 .claude/commands/context-pack.md
 .claude/commands/new-chat.md
 .claude/commands/review.md
@@ -17,6 +18,7 @@
 .claude/hooks/filter-test-output.sh
 .claude/settings.example.json
 .claude/skills/context-cleanup/SKILL.md
+.claude/skills/project-bootstrap/SKILL.md
 .claude/skills/prompt-hygiene/SKILL.md
 .claude/skills/review-gate/SKILL.md
 .claude/skills/swarm/SKILL.md
@@ -30,11 +32,14 @@ CHANGELOG.md
 CLAUDE.md
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
+FILE_TREE.md
+GET_STARTED_PROMPT.md
 LICENSE
 README.md
 SECURITY.md
 docs/START_HERE.md
 docs/anti-patterns.md
+docs/bootstrap-interview-workflow.md
 docs/chat-hygiene.md
 docs/checklists/before-implementation.md
 docs/checklists/before-new-chat.md
@@ -43,6 +48,7 @@ docs/checklists/before-review.md
 docs/checklists/release-readiness.md
 docs/claude-md-guide.md
 docs/cost-control.md
+docs/examples/bootstrap-prompt.md
 docs/examples/debugging-prompt.md
 docs/examples/good-prompts.md
 docs/examples/repo-setup-prompt.md
@@ -60,6 +66,7 @@ docs/templates/implementation-plan.md
 docs/templates/review-report.md
 docs/templates/task-brief.md
 docs/vibe-coding-workflow.md
+prompts/GET_STARTED_WITH_CLAUDE_CODE.md
 prompts/README.md
 prompts/patterns/task-context-goal-return.md
 prompts/recipes/build-feature.md

@@ -16,6 +16,7 @@ This repo is built around a simple idea:
 
 ```text
 .
+├── GET_STARTED_PROMPT.md             # Paste into Claude Code to bootstrap a real project
 ├── CLAUDE.md                         # Project-level Claude instructions
 ├── .claude/
 │   ├── agents/                       # Coordinator + worker subagents
@@ -25,6 +26,7 @@ This repo is built around a simple idea:
 │   └── skills/                       # Reusable Claude skills
 ├── docs/
 │   ├── START_HERE.md
+│   ├── bootstrap-interview-workflow.md
 │   ├── swarm-pattern.md
 │   ├── prompt-hygiene.md
 │   ├── chat-hygiene.md
@@ -46,6 +48,19 @@ This repo is built around a simple idea:
 | Main Claude Code session, feature implementation, orchestration | Sonnet | Good balance of intelligence, speed, and cost |
 | Scaffolding, search, docs cleanup, test generation, repetitive tasks | Haiku subagents | Cheap, fast, and good enough for bounded chores |
 | Independent review | A separate strong reviewer | Catches mistakes the builder session normalized |
+
+
+## Best first step for a new project
+
+Use the bootstrap prompt instead of copying this repo blindly:
+
+1. Publish or fork this repo on GitHub.
+2. Open Claude Code in the target project root.
+3. Paste [`prompts/GET_STARTED_WITH_CLAUDE_CODE.md`](prompts/GET_STARTED_WITH_CLAUDE_CODE.md).
+4. Replace `STARTER_REPO_URL` with your repo URL.
+5. Let Claude interview you, inspect the project, and propose a merge plan before editing.
+
+This generates a project-specific `CLAUDE.md`, `.claude/agents`, `.claude/skills`, `.claude/commands`, docs, and review workflows instead of dumping generic files into every repo.
 
 ## Fast start
 
@@ -96,7 +111,7 @@ Do not design the cheap workers as recursive orchestrators. Keep orchestration i
 
 ## Start reading
 
-Begin with [`docs/START_HERE.md`](docs/START_HERE.md).
+Begin with [`GET_STARTED_PROMPT.md`](GET_STARTED_PROMPT.md) for project bootstrapping, or [`docs/START_HERE.md`](docs/START_HERE.md) to learn the workflow.
 
 ## License
 

@@ -30,6 +30,18 @@ Then run it twice:
 
 Compare output quality, token usage, and how much correction you needed.
 
+## Bootstrap your own project
+
+For a real project, start with the interview prompt instead of manually copying files:
+
+```text
+prompts/GET_STARTED_WITH_CLAUDE_CODE.md
+```
+
+Paste it into Claude Code from your project root, replace `STARTER_REPO_URL`, and let Claude download this starter, interview you, inspect your codebase, and propose a project-specific merge plan.
+
+See `docs/bootstrap-interview-workflow.md` for the full workflow.
+
 ## What to copy into your own project
 
 At minimum:

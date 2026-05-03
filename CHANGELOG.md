@@ -7,3 +7,8 @@
 - Added Sonnet coordinator and Haiku worker agents.
 - Added swarm, prompt hygiene, context cleanup, and review skills.
 - Added prompt recipes, checklists, templates, and repo scaffolding.
+
+## Unreleased
+
+- Added a project bootstrap prompt that downloads the starter repo, interviews the user, and generates project-specific Claude files.
+- Added project-bootstrap command and skill.
